@@ -71,7 +71,7 @@ onMounted(() => {
 
     <div
       v-if="isOpen"
-      class="flex flex-col max-h-[600px] rounded-3xl bg-primary-100 dark:bg-primary-300 shadow-2xl grow w-full overflow-hidden"
+      class="flex flex-col max-h-[90dvh] sm:max-h-[75dvh] rounded-3xl bg-primary-100 dark:bg-primary-300 shadow-2xl grow w-full overflow-hidden"
     >
       <ChatHeader />
 

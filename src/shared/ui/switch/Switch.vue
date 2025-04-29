@@ -28,7 +28,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
     v-bind="forwarded"
     :class="
       cn(
-        'peer data-[state=checked]:bg-primary-300 data-[state=unchecked]:bg-primary-300 focus-visible:border-ring focus-visible:ring-ring/50 dark:data-[state=unchecked]:bg-primary-900 inline-flex h-[1.15rem] w-8 shrink-0 items-center rounded-full border border-transparent shadow-xs transition-all outline-none focus-visible:ring-2 disabled:cursor-not-allowed disabled:opacity-50',
+        'peer data-[state=checked]:bg-primary-900 data-[state=unchecked]:bg-primary-100 focus-visible:border-ring focus-visible:ring-ring/50 dark:data-[state=unchecked]:bg-primary-900 inline-flex h-[1.15rem] w-8 shrink-0 items-center rounded-full border border-transparent shadow-xs transition-all outline-none focus-visible:ring-2 disabled:cursor-not-allowed disabled:opacity-50',
         props.class,
       )
     "
@@ -37,7 +37,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
       data-slot="switch-thumb"
       :class="
         cn(
-          'bg-primary-500 dark:data-[state=unchecked]:bg-primary-500 dark:data-[state=checked]:bg-primary-900 pointer-events-none block size-4 rounded-full ring-0 transition-transform data-[state=checked]:translate-x-[calc(100%-2px)] data-[state=unchecked]:translate-x-0',
+          'bg-primary-500 dark:text-primary-900 dark:data-[state=unchecked]:bg-primary-300 dark:data-[state=checked]:bg-primary-300 pointer-events-none block size-4 rounded-full ring-0 transition-transform data-[state=checked]:translate-x-[calc(100%-2px)] data-[state=unchecked]:translate-x-0',
         )
       "
     >

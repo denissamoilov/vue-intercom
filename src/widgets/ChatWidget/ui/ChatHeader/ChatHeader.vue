@@ -9,7 +9,7 @@ const { toggleOpen } = useChat()
 
 <template>
   <div
-    class="flex items-center justify-between p-4 rounded-b-3xl bg-white bg-primary-100 dark:bg-primary-100 shrink-0"
+    class="flex items-center justify-between p-4 rounded-b-3xl bg-white dark:bg-primary-100 shrink-0"
   >
     <h3 class="text-heading flex items-center gap-2">
       <Bot />

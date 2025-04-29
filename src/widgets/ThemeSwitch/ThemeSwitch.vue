@@ -22,7 +22,7 @@ watch(theme, (newTheme) => {
 </script>
 
 <template>
-  <div class="fixed left-4 bottom-4">
+  <div class="fixed left-4 top-4 sm:bottom-4 sm:top-auto">
     <Switch @update:model-value="toggleTheme">
       <template #thumb>
         <div class="flex items-center justify-center size-4">
