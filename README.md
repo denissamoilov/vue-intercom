@@ -34,8 +34,8 @@ A customizable chat widget built with Vue 3 and TypeScript, featuring an interac
 1. Clone the repository
 
 ```bash
-git clone https://github.com/denissamoilov/vue-chat-widget.git
-cd vue-chat-widget
+git clone https://github.com/denissamoilov/vue-intercom.git
+cd vue-intercom
 ```
 
 2. Install dependencies
@@ -76,11 +76,3 @@ The chat widget can be customized with the following properties:
 - Chat session lifetime
 - Response delay timing
 - Bot response patterns
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
