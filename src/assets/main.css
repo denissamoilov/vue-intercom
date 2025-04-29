@@ -1,0 +1,109 @@
+@import './base.css';
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-bubble-me: var(--bubble-me);
+  --color-bubble-agent: var(--bubble-agent);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-100: var(--primary-100);
+  --color-primary-300: var(--primary-300);
+  --color-primary-500: var(--primary-500);
+  --color-primary-900: var(--primary-900);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-900: var(--neutral-900);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --text-heading: 1rem;
+  --text-heading--line-height: 150%;
+  --text-heading--font-weight: 700;
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.129 0.042 264.695);
+  --primary: oklch(0.208 0.042 265.755);
+  --primary-foreground: oklch(0.984 0.003 247.858);
+
+  --primary-100: #f5f0ff;
+  --primary-300: #f4f0ff;
+  --primary-500: #d7d0fe;
+  --primary-900: #605e8c;
+
+  --secondary: oklch(0.968 0.007 247.896);
+  --secondary-foreground: oklch(0.208 0.042 265.755);
+  --border: oklch(0.929 0.013 255.508);
+  --input: #fff;
+  --ring: #9792b2;
+  --radius: 0.625rem;
+
+  --bubble-me: #ffecba;
+  --bubble-agent: #d7d0fe;
+
+  --neutral-300: #f9f8fd;
+  --neutral-500: #a0a0a0;
+  --neutral-700: #707070;
+  --neutral-900: #1a1a1a;
+}
+
+.dark {
+  --background: oklch(0.129 0.042 264.695); /* Dark background */
+  --foreground: oklch(0.984 0.003 247.858); /* Light foreground */
+  --primary: oklch(0.984 0.003 247.858); /* Light primary color */
+  --primary-foreground: oklch(0.208 0.042 265.755); /* Darker primary foreground */
+
+  --primary-100: #25242c; /* Darker primary-100 */
+  --primary-300: #4f4c5a; /* Muted primary-300 */
+  --primary-500: #8581b3; /* Muted primary-500 */
+  --primary-900: #ede9f8; /* Light primary-900 */
+
+  --secondary: oklch(0.279 0.041 260.031); /* Darker secondary */
+  --secondary-foreground: oklch(0.984 0.003 247.858); /* Light secondary foreground */
+  --border: oklch(0.279 0.041 260.031); /* Darker border */
+  --input: #25242c; /* Dark input background */
+  --ring: #555; /* Darker ring color */
+  --radius: 0.625rem;
+
+  --bubble-me: #8581b3; /* Muted bubble-me color */
+  --bubble-agent: #ffecba; /* Lighter bubble-agent color */
+
+  --neutral-300: #707070; /* Darker neutral-300 */
+  --neutral-500: #a0a0a0; /* Muted neutral-500 */
+  --neutral-700: #f9f8fd; /* Light neutral-700 */
+  --neutral-900: #ffffff; /* White for neutral-900 */
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-neutral-900;
+  }
+}

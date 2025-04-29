@@ -1,0 +1,5 @@
+export { default as ChatMessage } from './ChatMessage/ChatMessage.vue'
+export { default as ChatInput } from './ChatInput/ChatInput.vue'
+export { default as ChatHeader } from './ChatHeader/ChatHeader.vue'
+export { default as ChatBubble } from './ChatBubble/ChatBubble.vue'
+export { default as TypingMessage } from './TypingMessage/TypingMessage.vue'
