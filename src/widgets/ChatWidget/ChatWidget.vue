@@ -81,12 +81,23 @@ onMounted(() => {
           cn('grow flex flex-col gap-2 rounded-2xl w-full overflow-auto', messages.length && 'p-4')
         "
       >
-        <ChatMessage
-          v-for="(message, index) in messages"
-          :key="index"
-          :id="index"
-          :message="message"
-        />
+        <TransitionGroup
+          tag="div"
+          appear
+          enter-from-class="opacity-0 translate-y-2"
+          enter-active-class="transition duration-300 ease-out"
+          enter-to-class="opacity-50 translate-y-0"
+          leave-from-class="opacity-100 translate-y-0"
+          leave-active-class="transition duration-200 ease-in"
+          leave-to-class="opacity-0 translate-y-2"
+        >
+          <ChatMessage
+            v-for="(message, index) in messages"
+            :key="index"
+            :id="index"
+            :message="message"
+          />
+        </TransitionGroup>
       </div>
 
       <ChatInput />
